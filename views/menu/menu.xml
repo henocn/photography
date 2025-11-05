@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <!-- Menu principal -->
+    <!-- Root menu -->
     <menuitem id="menu_photography_root"
         name="Photography Studio"
         sequence="10"
         icon="fa-camera" />
 
+    <!-- Submenus -->
     <menuitem id="menu_photography_project"
         name="Projects"
         parent="menu_photography_root"
