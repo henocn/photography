@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <record id="view_photography_project_form" model="ir.ui.view">
+            <field name="name">project.project.list</field>
+            <field name="model">project.project</field>
+            <field name="arch" type="xml">
+                <list string="Projets de photographie">
+                    <field name="name" />
+                    <field name="client_id" />
+                    <field name="start_date" />
+                    <field name="end_date" />
+                    <field name="layout_plan" />
+                </list>
+            </field>
+
+        </record>
+
+        <record name="view_photography_project_form" model="ir.ui.view">
+            <field name="name">project.project.form</field>
+            <field name="model">project.project</field>
+            <field name="arch" type="xml">
+                <form string="Projet de photographie">
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="client_id" />
+                            <field name="furniture_ids" />
+                            <field name="equipement_ids" />
+                            <field name="media_ids" />
+                            <field name="start_date" />
+                            <field name="end_date" />
+                            <field name="layout_plan" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

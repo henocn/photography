@@ -2,7 +2,6 @@ from odoo import models, fields
 
 
 class PhotographyProject(models.Model):
-    _name = "photography.project"
     _description = "Projet photographique"
     _inherit = "project.project"
 

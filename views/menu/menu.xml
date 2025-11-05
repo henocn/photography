@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <!-- Menu principal -->
-    <menuitem id="menu_photography_studio" name="Photography Studio" sequence="10" />
+    <menuitem id="menu_photography_root"
+        name="Photography Studio"
+        sequence="10"
+        icon="fa-camera" />
 
-    <!-- Sous-menus -->
-    <menuitem id="menu_photography_projects"
+    <menuitem id="menu_photography_project"
         name="Projects"
-        parent="menu_photography_studio"
-        action="action_photography_projects"
+        parent="menu_photography_root"
+        action="action_photography_project"
         sequence="1" />
 
     <menuitem id="menu_photography_furniture"
         name="Furniture"
-        parent="menu_photography_studio"
+        parent="menu_photography_root"
         action="action_photography_furniture"
         sequence="2" />
 
     <menuitem id="menu_photography_equipment"
         name="Equipment"
-        parent="menu_photography_studio"
+        parent="menu_photography_root"
         action="action_photography_equipment"
         sequence="3" />
 
     <menuitem id="menu_photography_media"
         name="Media"
-        parent="menu_photography_studio"
+        parent="menu_photography_root"
         action="action_photography_media"
         sequence="4" />
 </odoo>
