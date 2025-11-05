@@ -1,18 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <menuitem id="action_menu_root_photography"
-        name="Photography"
-        sequence="10" />
+    <!-- Menu principal -->
+    <menuitem id="menu_photography_studio" name="Photography Studio" sequence="10" />
 
-    <menuitem id="action_menu_customers"
-        name="Customers"
-        parent="action_menu_root_photography"
-        action="action_customers"
-        sequence="10" />
-
-
-    <menuitem id="action_menu_photos"
+    <!-- Sous-menus -->
+    <menuitem id="menu_photography_projects"
         name="Projects"
-        parent="action_menu_root_photography"
-        action="action_photos"
-        sequence="30" />
+        parent="menu_photography_studio"
+        action="action_photography_projects"
+        sequence="1" />
+
+    <menuitem id="menu_photography_furniture"
+        name="Furniture"
+        parent="menu_photography_studio"
+        action="action_photography_furniture"
+        sequence="2" />
+
+    <menuitem id="menu_photography_equipment"
+        name="Equipment"
+        parent="menu_photography_studio"
+        action="action_photography_equipment"
+        sequence="3" />
+
+    <menuitem id="menu_photography_media"
+        name="Media"
+        parent="menu_photography_studio"
+        action="action_photography_media"
+        sequence="4" />
 </odoo>

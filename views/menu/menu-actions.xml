@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Actions pour ouvrir les listes -->
+    <record id="action_photography_projects" model="ir.actions.act_window">
+        <field name="name">Projects</field>
+        <field name="res_model">project.project</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_photography_furniture" model="ir.actions.act_window">
+        <field name="name">Furniture</field>
+        <field name="res_model">photography.furniture</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_photography_equipment" model="ir.actions.act_window">
+        <field name="name">Equipment</field>
+        <field name="res_model">photography.equipment</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_photography_media" model="ir.actions.act_window">
+        <field name="name">Media</field>
+        <field name="res_model">photography.media</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>
