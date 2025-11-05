@@ -1,0 +1,18 @@
+<odoo>
+    <menuitem id="action_menu_root_photography"
+        name="Photography"
+        sequence="10" />
+
+    <menuitem id="action_menu_customers"
+        name="Customers"
+        parent="action_menu_root_photography"
+        action="action_customers"
+        sequence="10" />
+
+
+    <menuitem id="action_menu_photos"
+        name="Projects"
+        parent="action_menu_root_photography"
+        action="action_photos"
+        sequence="30" />
+</odoo>
