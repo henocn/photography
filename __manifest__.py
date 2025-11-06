@@ -1,5 +1,5 @@
 {
-    'name': "Photography",
+    'name': "photography",
 
     'summary': "Organization of photography sessions and client management",
 
@@ -29,10 +29,6 @@
         "views/menu/menu.xml",
 
         "views/photography_project_views.xml",
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
     ],
 }
 

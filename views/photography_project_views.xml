@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<odoo>
 
+<odoo>
     <!-- Vue liste -->
     <record id="view_photography_project_tree" model="ir.ui.view">
         <field name="name">photography.project.tree</field>

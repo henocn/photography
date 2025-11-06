@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <odoo>
-    <data>
-        <record id="action_photography_project" model="ir.actions.act_window">
-            <field name="name">Projects</field>
-            <field name="res_model">photography.project</field>
-            <field name="view_mode">tree,form</field>
-        </record>
+    <record id="action_photography_project" model="ir.actions.act_window">
+        <field name="name">Projects</field>
+        <field name="res_model">photography.project</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
-        <record id="action_photography_client" model="ir.actions.act_window">
-            <field name="name">Client</field>
-            <field name="res_model">photography.client</field>
-            <field name="view_mode">tree,form</field>
-        </record>
+    <record id="action_photography_client" model="ir.actions.act_window">
+        <field name="name">Client</field>
+        <field name="res_model">photography.client</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
-        <record id="action_photography_furniture" model="ir.actions.act_window">
-            <field name="name">Furniture</field>
-            <field name="res_model">photography.furniture</field>
-            <field name="view_mode">tree,form</field>
-        </record>
+    <record id="action_photography_furniture" model="ir.actions.act_window">
+        <field name="name">Furniture</field>
+        <field name="res_model">photography.furniture</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
-        <record id="action_photography_equipment" model="ir.actions.act_window">
-            <field name="name">Equipment</field>
-            <field name="res_model">photography.equipment</field>
-            <field name="view_mode">tree,form</field>
-        </record>
+    <record id="action_photography_equipment" model="ir.actions.act_window">
+        <field name="name">Equipment</field>
+        <field name="res_model">photography.equipment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
-        <record id="action_photography_media" model="ir.actions.act_window">
-            <field name="name">Media</field>
-            <field name="res_model">photography.media</field>
-            <field name="view_mode">tree,form</field>
-        </record>
+    <record id="action_photography_media" model="ir.actions.act_window">
+        <field name="name">Media</field>
+        <field name="res_model">photography.media</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
-    </data>
 </odoo>
