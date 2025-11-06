@@ -2,6 +2,7 @@ from odoo import models, fields
 
 
 class PhotographyProject(models.Model):
+    _name = "photography.project"
     _description = "Projet photographique"
     _inherit = "project.project"
 
@@ -10,8 +11,8 @@ class PhotographyProject(models.Model):
         ('schematic_image', 'Image schématique'),
         ('other', 'Autre'),
     ]
-
-    client_id = fields.Many2one('res.partner', string="Client", required=True)
+    title = fields.Char(string="Titre du projet", required=True)
+    client_id = fields.Many2one('photography.client', string="Client", required=True)
     furniture_ids = fields.One2many('photography.furniture', 'project_id', string="Meubles utilisés")
     equipment_ids = fields.One2many('photography.equipment', 'project_id', string="Équipements utilisés")
     media_ids = fields.One2many('photography.media', 'project_id', string="Médias associés")
