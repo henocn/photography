@@ -9,6 +9,7 @@
                     <field name="name" />
                     <field name="email" />
                     <field name="phone" />
+                    <field name="address" />
                 </list>
             </field>
         </record>
