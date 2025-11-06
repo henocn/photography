@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <odoo>
-    <!-- Root menu -->
-    <menuitem id="menu_photography_root"
-        name="Photography Studio"
-        sequence="10"
-        icon="fa-camera" />
+    <data>
+        <!-- Root menu -->
+        <menuitem id="menu_photography_root"
+            name="Photography Studio"
+            sequence="10"
+            web_icon="photography,static/description/icon.png" />
 
-    <!-- Submenus -->
-    <menuitem id="menu_photography_project"
-        name="Projects"
-        parent="menu_photography_root"
-        action="action_photography_project"
-        sequence="1" />
+        <!-- Submenus -->
+        <menuitem id="menu_photography_project"
+            name="Projects"
+            parent="menu_photography_root"
+            action="action_photography_project"
+            sequence="1" />
 
-    <menuitem id="menu_photography_client"
-        name="Clients"
-        parent="menu_photography_root"
-        action="action_photography_client"
-        sequence="2" />
+        <menuitem id="menu_photography_client"
+            name="Clients"
+            parent="menu_photography_root"
+            action="action_photography_client"
+            sequence="2" />
 
-    <menuitem id="menu_photography_furniture"
-        name="Furniture"
-        parent="menu_photography_root"
-        action="action_photography_furniture"
-        sequence="3" />
+        <menuitem id="menu_photography_furniture"
+            name="Furniture"
+            parent="menu_photography_root"
+            action="action_photography_furniture"
+            sequence="3" />
 
-    <menuitem id="menu_photography_equipment"
-        name="Equipment"
-        parent="menu_photography_root"
-        action="action_photography_equipment"
-        sequence="4" />
+        <menuitem id="menu_photography_equipment"
+            name="Equipment"
+            parent="menu_photography_root"
+            action="action_photography_equipment"
+            sequence="4" />
 
-    <menuitem id="menu_photography_media"
-        name="Media"
-        parent="menu_photography_root"
-        action="action_photography_media"
-        sequence="5" />
+        <menuitem id="menu_photography_media"
+            name="Media"
+            parent="menu_photography_root"
+            action="action_photography_media"
+            sequence="5" />
+    </data>
 </odoo>

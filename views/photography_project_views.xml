@@ -2,16 +2,16 @@
 
 <odoo>
     <!-- Vue liste -->
-    <record id="view_photography_project_tree" model="ir.ui.view">
-        <field name="name">photography.project.tree</field>
+    <record id="view_photography_project_list" model="ir.ui.view">
+        <field name="name">photography.project.list</field>
         <field name="model">photography.project</field>
         <field name="arch" type="xml">
-            <tree string="Projets photographiques">
+            <list string="Projets photographiques">
                 <field name="title" />
                 <field name="client_id" />
                 <field name="shooting_date" />
                 <field name="layout_plan" />
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -33,30 +33,30 @@
                     <notebook>
                         <page string="Furniture">
                             <field name="furniture_ids">
-                                <tree editable="bottom">
+                                <list editable="bottom">
                                     <field name="furniture_type" />
                                     <field name="quantity" />
                                     <field name="description" />
-                                </tree>
+                                </list>
                             </field>
                         </page>
 
                         <page string="Equipment">
                             <field name="equipment_ids">
-                                <tree editable="bottom">
+                                <list editable="bottom">
                                     <field name="equipment_type" />
                                     <field name="quantity" />
                                     <field name="description" />
-                                </tree>
+                                </list>
                             </field>
                         </page>
 
                         <page string="Media">
                             <field name="media_ids">
-                                <tree editable="bottom">
+                                <list editable="bottom">
                                     <field name="media_file" widget="image" />
                                     <field name="description" />
-                                </tree>
+                                </list>
                             </field>
                         </page>
                     </notebook>

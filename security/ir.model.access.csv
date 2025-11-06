@@ -1,2 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_photography_photography,photography.photography,model_photography_photography,base.group_user,1,1,1,1
+access_photography_project,access.photography.project,model_photography_project,,1,1,1,1
+access_photography_client,access.photography.client,model_photography_client,,1,1,1,1
+access_photography_equipment,access.photography.equipment,model_photography_equipment,,1,1,1,1
+access_photography_furniture,access.photography.furniture,model_photography_furniture,,1,1,1,1
+access_photography_media,access.photography.media,model_photography_media,,1,1,1,1
