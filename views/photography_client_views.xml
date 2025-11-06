@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_photography_client_list" model="ir.ui.view">
+            <field name="name">photography.client.list</field>
+            <field name="model">photography.client</field>
+            <field name="arch" type="xml">
+                <list string="Clients de photographie">
+                    <field name="name" />
+                    <field name="email" />
+                    <field name="phone" />
+                </list>
+            </field>
+        </record>
+
+        <!-- Vue formulaire (form) -->
+        <record id="view_photography_client_form" model="ir.ui.view">
+            <field name="name">photography.client.form</field>
+            <field name="model">photography.client</field>
+            <field name="arch" type="xml">
+                <form string="Client de photographie">
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="email" />
+                            <field name="phone" />
+                            <field name="address" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
