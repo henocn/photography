@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+
     <!-- Vue liste -->
     <record id="view_photography_project_tree" model="ir.ui.view">
         <field name="name">photography.project.tree</field>
-        <field name="model">project.project</field>
+        <field name="model">photography.project</field>
         <field name="arch" type="xml">
-            <tree string="Photography Projects">
-                <field name="name" />
+            <tree string="Projets photographiques">
+                <field name="title" />
                 <field name="client_id" />
                 <field name="shooting_date" />
                 <field name="layout_plan" />
-                <field name="user_id" string="Assigned To" />
             </tree>
         </field>
     </record>
 
-    <!-- Vue formulaire (Form View) -->
+    <!-- Vue formulaire -->
     <record id="view_photography_project_form" model="ir.ui.view">
         <field name="name">photography.project.form</field>
-        <field name="model">project.project</field>
+        <field name="model">photography.project</field>
         <field name="arch" type="xml">
-            <form string="Photography Project">
+            <form string="Projet photographique">
                 <sheet>
                     <group>
-                        <group>
-                            <field name="name" />
-                            <field name="client_id" />
-                            <field name="shooting_date" />
-                            <field name="layout_plan" />
-                        </group>
-                        <group>
-                            <field name="user_id" />
-                            <field name="description" />
-                        </group>
+                        <field name="title" />
+                        <field name="client_id" options="{'no_create': False}" />
+                        <field name="shooting_date" />
+                        <field name="layout_plan" />
+                        <field name="description" />
                     </group>
 
                     <notebook>
