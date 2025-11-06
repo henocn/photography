@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_photography_furniture_list" model="ir.ui.view">
+            <field name="name">photography.furniture.list</field>
+            <field name="model">photography.furniture</field>
+            <field name="arch" type="xml">
+                <list string="Les media dans les projets photographiques">
+                    <field name="project_id" />
+                    <field name="furniture_type" />
+                    <field name="quantity" />
+                    <field name="description" />
+                </list>
+            </field>
+        </record>
+
+        <!-- Vue formulaire (form) -->
+        <record id="view_photography_furniture_form" model="ir.ui.view">
+            <field name="name">photography.furniture.form</field>
+            <field name="model">photography.furniture</field>
+            <field name="arch" type="xml">
+                <form string="Média de photographie">
+                    <sheet>
+                        <group>
+                            <field name="project_id" />
+                            <field name="furniture_type" />
+                            <field name="quantity" />
+                            <field name="description" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
