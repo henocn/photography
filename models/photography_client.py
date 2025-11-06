@@ -9,7 +9,7 @@ class PhotographyClient(models.Model):
 
 
     name = fields.Char(string="Nom du client", required=True)
-    email = fields.Char(string="Email du client")
-    phone = fields.Char(string="Téléphone du client")
+    email = fields.Char(string="Email", required=True)
+    phone = fields.Char(string="Contact", required=True)
     address = fields.Text(string="Adresse du client")
     
