@@ -5,7 +5,7 @@
             <field name="name">photography.furniture.list</field>
             <field name="model">photography.furniture</field>
             <field name="arch" type="xml">
-                <list string="Les media dans les projets photographiques">
+                <list string="Les meubles photographiques">
                     <field name="project_id" />
                     <field name="furniture_type" />
                     <field name="quantity" />
@@ -19,7 +19,7 @@
             <field name="name">photography.furniture.form</field>
             <field name="model">photography.furniture</field>
             <field name="arch" type="xml">
-                <form string="Média de photographie">
+                <form string="Meubles photographiques">
                     <sheet>
                         <group>
                             <field name="project_id" />
