@@ -26,6 +26,11 @@
     'data': [
         'security/ir.model.access.csv',
         "views/photography_project_views.xml",
+        "views/photography_client_views.xml",
+        "views/photography_equipment_views.xml",
+        "views/photography_furniture_views.xml",
+        "views/photography_media_views.xml",
+
         "views/menu/menu-actions.xml",
         "views/menu/menu.xml",
     ],
