@@ -6,7 +6,7 @@
             <field name="model">photography.furniture</field>
             <field name="arch" type="xml">
                 <list string="Les meubles photographiques">
-                    <field name="project_id" />
+                    <field name="image" widget="image"/>
                     <field name="furniture_type" />
                     <field name="quantity" />
                     <field name="description" />
@@ -22,7 +22,7 @@
                 <form string="Meubles photographiques">
                     <sheet>
                         <group>
-                            <field name="project_id" />
+                            <field name="image" widget="image"/>
                             <field name="furniture_type" />
                             <field name="quantity" />
                             <field name="description" />

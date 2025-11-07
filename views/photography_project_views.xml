@@ -38,6 +38,15 @@
                                     <field name="quantity" />
                                     <field name="description" />
                                 </list>
+                                <form string="Meuble utilisé">
+                                    <sheet>
+                                        <group>
+                                            <field name="furniture_id"/>
+                                            <field name="quantity"/>
+                                            <field name="description"/>
+                                        </group>
+                                    </sheet>
+                                </form>
                             </field>
                         </page>
 
@@ -48,6 +57,15 @@
                                     <field name="quantity" />
                                     <field name="description" />
                                 </list>
+                                <form string="Équipement utilisé">
+                                    <sheet>
+                                        <group>
+                                            <field name="equipment_id"/>
+                                            <field name="quantity"/>
+                                            <field name="description"/>
+                                        </group>
+                                    </sheet>
+                                </form>
                             </field>
                         </page>
 

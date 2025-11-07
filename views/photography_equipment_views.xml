@@ -6,7 +6,7 @@
             <field name="model">photography.equipment</field>
             <field name="arch" type="xml">
                 <list string="Liste des équipements">
-                    <field name="project_id" />
+                    <field name="image" widget="image"/>
                     <field name="equipment_type" />
                     <field name="quantity" />
                     <field name="description" />
@@ -22,7 +22,7 @@
                 <form string="Equipment de photographie">
                     <sheet>
                         <group>
-                            <field name="project_id" />
+                            <field name="image" widget="image"/>
                             <field name="equipment_type" />
                             <field name="quantity" />
                             <field name="description" />
