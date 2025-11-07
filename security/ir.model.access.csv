@@ -4,3 +4,5 @@ access_photography_client,access.photography.client,model_photography_client,,1,
 access_photography_equipment,access.photography.equipment,model_photography_equipment,,1,1,1,1
 access_photography_furniture,access.photography.furniture,model_photography_furniture,,1,1,1,1
 access_photography_media,access.photography.media,model_photography_media,,1,1,1,1
+access_photography_equipment_association,access.photography.equipment.association,model_photography_equipment_association,,1,1,1,1
+access_photography_furniture_association,access.photography.furniture.association,model_photography_furniture_association,,1,1,1,1

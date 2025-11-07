@@ -34,7 +34,7 @@
                         <page string="Furniture">
                             <field name="furniture_ids">
                                 <list editable="bottom">
-                                    <field name="furniture_type" />
+                                    <field name="furniture_id" />
                                     <field name="quantity" />
                                     <field name="description" />
                                 </list>
@@ -44,7 +44,7 @@
                         <page string="Equipment">
                             <field name="equipment_ids">
                                 <list editable="bottom">
-                                    <field name="equipment_type" />
+                                    <field name="equipment_id" />
                                     <field name="quantity" />
                                     <field name="description" />
                                 </list>
