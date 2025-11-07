@@ -20,7 +20,7 @@
     'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', "web", "contacts", "project"],
+    'depends': ['base', "web"],
 
     # always loaded
     'data': [
