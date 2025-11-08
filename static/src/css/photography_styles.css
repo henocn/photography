@@ -1,0 +1,13 @@
+/* Photography module UI tweaks */
+/* Highlight entire list/tree row when decorated as 'success' (e.g., new equipment) */
+.o_list_view .o_data_row.o_decoration_success td,
+.o_tree_view .o_data_row.o_decoration_success td,
+.o_list_view .o_group .o_data_row.o_decoration_success td {
+  background-color: #e6ffea !important; /* light green */
+}
+
+/* Ensure selection cells keep readable text */
+.o_list_view .o_data_row.o_decoration_success td,
+.o_tree_view .o_data_row.o_decoration_success td {
+  color: #0b3b12 !important;
+}

@@ -34,5 +34,10 @@
         "views/menu/menu-actions.xml",
         "views/menu/menu.xml",
     ],
+    'assets': {
+        'web.assets_backend': [
+            'photography/static/src/css/photography_styles.css',
+        ],
+    },
 }
 

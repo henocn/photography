@@ -5,11 +5,14 @@
             <field name="name">photography.equipment.list</field>
             <field name="model">photography.equipment</field>
             <field name="arch" type="xml">
-                <list string="Liste des équipements">
-                    <field name="image" widget="image" width="64" height="64"/>
-                    <field name="equipment_type" widget="statelist" decoration-info="equipment_type in ('camera','lens')" decoration-warning="equipment_type == 'other'" decoration-success="equipment_type in ('tripod','lighting','reflector')" decoration-danger="equipment_type in ('microphone','microcravate')"/>
-                    <field name="quantity" sum="Total"/>
-                    <field name="description" optional="show"/>
+                <list string="Liste des équipements" decoration-success="equipment_state == 'new'">
+                    <field name="image" widget="image" width="50" height="50" />
+                    <field name="name" />
+                    <field name="equipment_type" widget="statelist" />
+                    <field name="equipment_state" widget="statelist" />
+                    <field name="location" />
+                    <field name="quantity" sum="Total" />
+                    <field name="description" optional="show" />
                 </list>
             </field>
         </record>
@@ -22,15 +25,20 @@
                 <form string="Equipment de photographie">
                     <sheet>
                         <div class="oe_title">
-                            <field name="image" widget="image" class="oe_avatar" options="{'size': [300, 300]}"/>
+                            <field name="name" />
+                            <field name="image" widget="image" class="oe_avatar"
+                                options="{'size': [300, 300]}" />
                         </div>
                         <group>
                             <group>
-                                <field name="equipment_type" widget="statelist"/>
-                                <field name="quantity"/>
+                                <field name="equipment_type" widget="statelist" />
+                                <field name="equipment_state" widget="statelist" />
+                                <field name="quantity" />
+                                <field name="adding_date" />
+                                <field name="location" />
                             </group>
                             <group>
-                                <field name="description"/>
+                                <field name="description" />
                             </group>
                         </group>
                     </sheet>
