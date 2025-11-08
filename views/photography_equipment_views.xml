@@ -6,10 +6,10 @@
             <field name="model">photography.equipment</field>
             <field name="arch" type="xml">
                 <list string="Liste des équipements">
-                    <field name="image" widget="image"/>
-                    <field name="equipment_type" />
-                    <field name="quantity" />
-                    <field name="description" />
+                    <field name="image" widget="image" width="64" height="64"/>
+                    <field name="equipment_type" widget="statelist" decoration-info="equipment_type in ('camera','lens')" decoration-warning="equipment_type == 'other'" decoration-success="equipment_type in ('tripod','lighting','reflector')" decoration-danger="equipment_type in ('microphone','microcravate')"/>
+                    <field name="quantity" sum="Total"/>
+                    <field name="description" optional="show"/>
                 </list>
             </field>
         </record>
@@ -21,11 +21,17 @@
             <field name="arch" type="xml">
                 <form string="Equipment de photographie">
                     <sheet>
+                        <div class="oe_title">
+                            <field name="image" widget="image" class="oe_avatar" options="{'size': [300, 300]}"/>
+                        </div>
                         <group>
-                            <field name="image" widget="image"/>
-                            <field name="equipment_type" />
-                            <field name="quantity" />
-                            <field name="description" />
+                            <group>
+                                <field name="equipment_type" widget="statelist"/>
+                                <field name="quantity"/>
+                            </group>
+                            <group>
+                                <field name="description"/>
+                            </group>
                         </group>
                     </sheet>
                 </form>

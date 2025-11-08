@@ -34,9 +34,9 @@
                         <page string="Furniture">
                             <field name="furniture_ids">
                                 <list editable="bottom">
-                                    <field name="furniture_id" />
-                                    <field name="quantity" />
-                                    <field name="description" />
+                                    <field name="furniture_id" domain="[('quantity', '>', 0)]"/>
+                                    <field name="quantity" sum="Total"/>
+                                    <field name="description" optional="show"/>
                                 </list>
                                 <form string="Meuble utilisé">
                                     <sheet>
@@ -53,9 +53,9 @@
                         <page string="Equipment">
                             <field name="equipment_ids">
                                 <list editable="bottom">
-                                    <field name="equipment_id" />
-                                    <field name="quantity" />
-                                    <field name="description" />
+                                    <field name="equipment_id" domain="[('quantity', '>', 0)]"/>
+                                    <field name="quantity" sum="Total"/>
+                                    <field name="description" optional="show"/>
                                 </list>
                                 <form string="Équipement utilisé">
                                     <sheet>
