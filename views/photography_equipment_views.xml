@@ -5,7 +5,7 @@
             <field name="name">photography.equipment.list</field>
             <field name="model">photography.equipment</field>
             <field name="arch" type="xml">
-                <list string="Liste des équipements" decoration-success="equipment_state == 'new'">
+                <list string="Liste des équipements">
                     <field name="image" widget="image" width="50" height="50" />
                     <field name="name" />
                     <field name="equipment_type" widget="statelist" />
