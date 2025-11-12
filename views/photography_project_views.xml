@@ -41,7 +41,7 @@
                                 <form string="Meuble utilisé">
                                     <sheet>
                                         <group>
-                                            <field name="image"/>
+                                            <field name="image" width="50" height="50"/>
                                             <field name="furniture_id"/>
                                             <field name="quantity"/>
                                             <field name="description"/>
@@ -61,7 +61,7 @@
                                 <form string="Équipement utilisé">
                                     <sheet>
                                         <group>
-                                            <field name="image"/>
+                                            <field name="image" width="50" height="50"/>
                                             <field name="equipment_id"/>
                                             <field name="quantity"/>
                                             <field name="description"/>
