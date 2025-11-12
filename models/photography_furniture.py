@@ -6,16 +6,15 @@ class PhotographyFurniture(models.Model):
     _description = "Meuble photographique"
 
     type_selection = [
-        ('chair', 'Chaise'),
-        ('desk', 'Banc'),
-        ('table', 'Table'),
-        ('sofa', 'Canapé'),
-        ('shelf', 'Étagère'),
-        ('plant', 'Plante'),
+        ('category1', 'Categorie 1'),
+        ('category2', 'Categorie 2'),
+        ('category3', 'Categorie 3'),
         ('other', 'Autre'),
     ]
 
     image = fields.Image(string="Photo du meuble", required=True)
+    name = fields.Char(string="Type de meuble", required=True)
     furniture_type = fields.Selection(type_selection, string="Type de meuble", required=True)
+    location = fields.Char(string="Emplacement")
     quantity = fields.Integer(string="Quantité disponible", default=1)
     description = fields.Text(string="description du meuble")
