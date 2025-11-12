@@ -9,7 +9,7 @@
 
         <!-- Submenus -->
         <menuitem id="menu_photography_project"
-            name="Projects"
+            name="Projets"
             parent="menu_photography_root"
             action="action_photography_project"
             sequence="1" />
@@ -21,19 +21,19 @@
             sequence="2" />
 
         <menuitem id="menu_photography_furniture"
-            name="Furniture"
+            name="Meubles"
             parent="menu_photography_root"
             action="action_photography_furniture"
             sequence="3" />
 
         <menuitem id="menu_photography_equipment"
-            name="Equipment"
+            name="Equipments"
             parent="menu_photography_root"
             action="action_photography_equipment"
             sequence="4" />
 
         <menuitem id="menu_photography_media"
-            name="Media"
+            name="Medias"
             parent="menu_photography_root"
             action="action_photography_media"
             sequence="5" />
