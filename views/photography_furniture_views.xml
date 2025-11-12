@@ -6,14 +6,16 @@
             <field name="model">photography.furniture</field>
             <field name="arch" type="xml">
                 <list string="Les meubles photographiques">
-                    <field name="image" widget="image" width="64" height="64"/>
-                    <field name="furniture_type" widget="statelist" decoration-info="furniture_type in ('chair','desk')" decoration-warning="furniture_type == 'other'" decoration-success="furniture_type in ('table','sofa')" decoration-danger="furniture_type in ('shelf','plant')"/>
-                    <field name="quantity" sum="Total"/>
-                    <field name="description" optional="show"/>
+                    <field name="image" widget="image" width="50" height="50" />
+                    <field name="name" />
+                    <field name="furniture_type" widget="statelist" />
+                    <field name="location" />
+                    <field name="quantity" sum="Total" />
+                    <field name="description" optional="show" />
                 </list>
             </field>
         </record>
-
+        
         <!-- Vue formulaire (form) -->
         <record id="view_photography_furniture_form" model="ir.ui.view">
             <field name="name">photography.furniture.form</field>
@@ -22,15 +24,18 @@
                 <form string="Meubles photographiques">
                     <sheet>
                         <div class="oe_title">
-                            <field name="image" widget="image" class="oe_avatar" options="{'size': [300, 300]}"/>
+                            <field name="image" widget="image" class="oe_avatar"
+                            options="{'size': [300, 300]}" />
                         </div>
                         <group>
                             <group>
-                                <field name="furniture_type" widget="statelist"/>
-                                <field name="quantity"/>
+                                <field name="name" />
+                                <field name="location" />
+                                <field name="furniture_type" widget="statelist" />
+                                <field name="quantity" />
                             </group>
                             <group>
-                                <field name="description"/>
+                                <field name="description" />
                             </group>
                         </group>
                     </sheet>
