@@ -10,5 +10,6 @@ class PhotographyFurnitureAssociation(models.Model):
 
     project_id = fields.Many2one('photography.project', string="Projet associé", required=True, ondelete='cascade')
     furniture_id = fields.Many2one('photography.furniture', string="Meuble", required=True, ondelete='cascade')
+    image = fields.Image(related="furniture_id.image", string="Image", store=False)
     quantity = fields.Integer(string="Quantité requise", default=1)
     description = fields.Text(string="Eventuelle description")
