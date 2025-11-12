@@ -9,7 +9,6 @@
                     <field name="image" widget="image" width="50" height="50" />
                     <field name="name" />
                     <field name="equipment_type" widget="statelist" />
-                    <field name="equipment_state" widget="statelist" />
                     <field name="location" />
                     <field name="quantity" sum="Total" />
                     <field name="description" optional="show" />
@@ -31,7 +30,6 @@
                         </div>
                         <group>
                             <group>
-                                <field name="equipment_type" widget="statelist" />
                                 <field name="equipment_state" widget="statelist" />
                                 <field name="quantity" />
                                 <field name="adding_date" />

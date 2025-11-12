@@ -13,7 +13,7 @@ class PhotographyFurniture(models.Model):
     ]
 
     image = fields.Image(string="Photo du meuble", required=True)
-    name = fields.Char(string="Type de meuble", required=True)
+    name = fields.Char(string="Nom du meuble", required=True)
     furniture_type = fields.Selection(type_selection, string="Type de meuble", required=True)
     location = fields.Char(string="Emplacement")
     quantity = fields.Integer(string="Quantité disponible", default=1)
