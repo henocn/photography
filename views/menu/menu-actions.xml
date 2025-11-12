@@ -2,31 +2,31 @@
 
 <odoo>
     <record id="action_photography_project" model="ir.actions.act_window">
-        <field name="name">Projects</field>
+        <field name="name">Projets</field>
         <field name="res_model">photography.project</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <record id="action_photography_client" model="ir.actions.act_window">
-        <field name="name">Client</field>
+        <field name="name">Clients</field>
         <field name="res_model">photography.client</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <record id="action_photography_furniture" model="ir.actions.act_window">
-        <field name="name">Furniture</field>
+        <field name="name">Meubles</field>
         <field name="res_model">photography.furniture</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <record id="action_photography_equipment" model="ir.actions.act_window">
-        <field name="name">Equipment</field>
+        <field name="name">Equipments</field>
         <field name="res_model">photography.equipment</field>
         <field name="view_mode">list,form</field>
     </record>
 
     <record id="action_photography_media" model="ir.actions.act_window">
-        <field name="name">Media</field>
+        <field name="name">Medias</field>
         <field name="res_model">photography.media</field>
         <field name="view_mode">list,form</field>
     </record>
