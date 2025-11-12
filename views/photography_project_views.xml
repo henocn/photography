@@ -34,17 +34,17 @@
                         <page string="Furniture">
                             <field name="furniture_ids">
                                 <list editable="bottom">
-                                    <field name="image" width="50" height="50"/>
-                                    <field name="furniture_id" domain="[('quantity', '>', 0)]"/>
-                                    <field name="quantity" sum="Total"/>
-                                    <field name="description" optional="show"/>
+                                    <field name="image" widget="image" width="50" height="50" />
+                                    <field name="furniture_id" domain="[('quantity', '>', 0)]" />
+                                    <field name="quantity" sum="Total" />
+                                    <field name="description" optional="show" />
                                 </list>
                                 <form string="Meuble utilisé">
                                     <sheet>
                                         <group>
-                                            <field name="furniture_id"/>
-                                            <field name="quantity"/>
-                                            <field name="description"/>
+                                            <field name="furniture_id" />
+                                            <field name="quantity" />
+                                            <field name="description" />
                                         </group>
                                     </sheet>
                                 </form>
@@ -54,17 +54,17 @@
                         <page string="Equipment">
                             <field name="equipment_ids">
                                 <list editable="bottom">
-                                    <field name="image" width="50" height="50"/>
-                                    <field name="equipment_id" domain="[('quantity', '>', 0)]"/>
-                                    <field name="quantity" sum="Total"/>
-                                    <field name="description" optional="show"/>
+                                    <field name="image" widget="image" width="50" height="50" />
+                                    <field name="equipment_id" domain="[('quantity', '>', 0)]" />
+                                    <field name="quantity" sum="Total" />
+                                    <field name="description" optional="show" />
                                 </list>
                                 <form string="Équipement utilisé">
                                     <sheet>
                                         <group>
-                                            <field name="equipment_id"/>
-                                            <field name="quantity"/>
-                                            <field name="description"/>
+                                            <field name="equipment_id" />
+                                            <field name="quantity" />
+                                            <field name="description" />
                                         </group>
                                     </sheet>
                                 </form>
