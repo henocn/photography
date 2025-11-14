@@ -22,7 +22,7 @@
                     <sheet>
                         <group>
                             <field name="project_id" />
-                            <field name="media_file" />
+                            <field name="media_file" height="250" width="250" widget="image" />
                             <field name="description" />
                         </group>
                     </sheet>
