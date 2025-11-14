@@ -31,7 +31,7 @@
                     </group>
 
                     <notebook>
-                        <page string="Furniture">
+                        <page string="Meubles">
                             <field name="furniture_ids">
                                 <list editable="bottom">
                                     <field name="image" widget="image" width="50" height="50" />
@@ -74,8 +74,8 @@
                         <page string="Media">
                             <field name="media_ids">
                                 <list editable="bottom">
-                                    <field name="media_file" widget="image" />
-                                    <field name="description" />
+                                    <field name="media_file" widget="image" width="150" height="150" />
+                                    <field name="description" optionnal="show" />
                                 </list>
                             </field>
                         </page>
