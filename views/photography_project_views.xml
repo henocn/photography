@@ -75,7 +75,7 @@
                             <field name="media_ids">
                                 <list editable="bottom">
                                     <field name="media_file" widget="image" width="150" height="150" />
-                                    <field name="description" optionnal="show" />
+                                    <field name="description" optional="show" />
                                 </list>
                             </field>
                         </page>
