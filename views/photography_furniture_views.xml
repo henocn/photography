@@ -9,6 +9,7 @@
                     <field name="image" widget="image" width="50" height="50" />
                     <field name="name" />
                     <field name="furniture_type" widget="statelist" />
+                    <field name="furniture_state" widget="statelist" />
                     <field name="location" />
                     <field name="quantity" sum="Total" />
                     <field name="description" optional="show" />
@@ -32,6 +33,7 @@
                                 <field name="name" />
                                 <field name="location" />
                                 <field name="furniture_type" widget="statelist" />
+                                <field name="furniture_state" widget="statelist" />
                                 <field name="quantity" />
                             </group>
                             <group>

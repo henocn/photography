@@ -17,6 +17,7 @@ class PhotographyFurniture(models.Model):
         ("on_using", "EN SERVICE"),
         ("unknown", "NON SPECIFIE"),
     ]
+    
 
     image = fields.Image(string="Photo du meuble", required=True)
     name = fields.Char(string="Nom du meuble", required=True)
