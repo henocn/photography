@@ -6,9 +6,9 @@ class PhotographyFurniture(models.Model):
     _description = "Meuble photographique"
 
     type_selection = [
-        ('category1', 'Categorie 1'),
-        ('category2', 'Categorie 2'),
-        ('category3', 'Categorie 3'),
+        ('mobilier', 'MOBILIER'),
+        ('decor', 'DECORATIF'),
+        ('plant', 'PLANTE'),
         ('other', 'Autre'),
     ]
 
