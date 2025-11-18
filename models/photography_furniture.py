@@ -26,16 +26,3 @@ class PhotographyFurniture(models.Model):
     location = fields.Char(string="Emplacement")
     quantity = fields.Integer(string="Quantité", default=1)
     description = fields.Text(string="Description")
-    
-    
-    
-    @api.multi
-    def name_get(self):
-        result = []
-        for record in self:
-            display_value = record.name
-            if record.description:
-                display_value = f"{display_value}, {record.description}"
-            
-            result.append((record.id, display_value))
-        return result
