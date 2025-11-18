@@ -9,7 +9,7 @@ class PhotographyFurniture(models.Model):
         ('mobilier', 'MOBILIER'),
         ('decor', 'DECORATIF'),
         ('plant', 'PLANTE'),
-        ('other', 'Autre'),
+        ('other', 'AUTRE'),
     ]
 
     using_state_selection = [
@@ -22,7 +22,7 @@ class PhotographyFurniture(models.Model):
     image = fields.Image(string="Photo du meuble", required=True)
     name = fields.Char(string="Nom du meuble", required=True)
     furniture_type = fields.Selection(type_selection, string="Type de meuble", required=True)
-    furniture_state = fields.Selection(using_state_selection, string="Etat d'utilisation", required=True)
+    furniture_state = fields.Selection(using_state_selection, string="Etat d'utilisation")
     location = fields.Char(string="Emplacement")
     quantity = fields.Integer(string="Quantité", default=1)
     description = fields.Text(string="Description")
