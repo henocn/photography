@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_employee_form_inherit_photographer" model="ir.ui.view">
+            <field name="name">employee.form.inherit.photographer</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/notebook/page[@string='Personal Information']" position="after">
+                    <page string="Photography Details">
+                        <group>
+                            <field name="is_photographer" />
+                            <field name="photography_style" />
+                            <field name="portfolio_link" />
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+
+</odoo>
