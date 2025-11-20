@@ -31,6 +31,8 @@
         "views/photography_media_views.xml",
         "views/photography_project_views.xml",
 
+        "views/employee_views.xml",
+
         "views/menu/menu-actions.xml",
         "views/menu/menu.xml",
     ],
