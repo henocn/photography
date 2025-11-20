@@ -42,7 +42,7 @@
             name="Employés"
             parent="menu_photography_root"
             action="action_rh_employee"
-            sequence="5" />
+            sequence="6" />
         
     </data>
 </odoo>
