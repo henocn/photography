@@ -37,5 +37,12 @@
             parent="menu_photography_root"
             action="action_photography_media"
             sequence="5" />
+
+        <menuitem id="menu_rh_employee"
+            name="Employés"
+            parent="menu_photography_root"
+            action="action_rh_employee"
+            sequence="5" />
+        
     </data>
 </odoo>
