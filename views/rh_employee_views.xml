@@ -89,7 +89,7 @@
                                         <field name="quantity" />
                                         <field name="assigned_date" />
                                         <field name="tool_state" />
-                                        <fiel name ="additionnal_notes" />
+                                        <field name ="additionnal_notes" />
                                     </list>
                                 </field>
                             </page>
