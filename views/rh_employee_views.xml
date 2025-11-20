@@ -7,7 +7,7 @@
             <field name="model">rh.employee</field>
             <field name="arch" type="xml">
                 <list string="Employés">
-                    <field name="picture" widget="image" width="50" height="50"/>
+                    <field name="picture" widget="image" width="50" height="50" />
                     <field name="name" />
                     <field name="email" />
                     <field name="phone" />
@@ -79,20 +79,20 @@
                         </group>
 
                         <notebook>
-                            <page string="CV">
-                                <field name="resume" widget="attachment"/>
-                            </page>
                             <page string="Outils">
                                 <field name="tool_ids">
                                     <list editable="bottom">
                                         <field name="image" widget="image" height="50" width="50" />
                                         <field name="tool_id" />
                                         <field name="quantity" />
-                                        <field name="assigned_date" />
                                         <field name="tool_state" />
-                                        <field name ="additionnal_notes" />
+                                        <field name="assigned_date" />
+                                        <field name="additionnal_notes" />
                                     </list>
                                 </field>
+                            </page>
+                            <page string="CV">
+                                <field name="resume" widget="attachment" />
                             </page>
                         </notebook>
 
