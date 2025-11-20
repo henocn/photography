@@ -32,16 +32,16 @@
             action="action_photography_equipment"
             sequence="4" />
 
-        <menuitem id="menu_photography_media"
-            name="Medias"
-            parent="menu_photography_root"
-            action="action_photography_media"
-            sequence="5" />
-
         <menuitem id="menu_rh_employee"
             name="Employés"
             parent="menu_photography_root"
             action="action_rh_employee"
+            sequence="5" />
+
+        <menuitem id="menu_rh_tool"
+            name="Employés"
+            parent="menu_photography_root"
+            action="action_rh_tool"
             sequence="6" />
         
     </data>

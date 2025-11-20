@@ -25,15 +25,15 @@
         <field name="view_mode">list,form</field>
     </record>
 
-    <record id="action_photography_media" model="ir.actions.act_window">
-        <field name="name">Medias</field>
-        <field name="res_model">photography.media</field>
-        <field name="view_mode">list,form</field>
-    </record>
-
     <record id="action_rh_employee" model="ir.actions.act_window">
         <field name="name">Employés</field>
         <field name="res_model">rh.employee</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_rh_tool" model="ir.actions.act_window">
+        <field name="name">Outils</field>
+        <field name="res_model">rh.tool</field>
         <field name="view_mode">list,form</field>
     </record>
 
