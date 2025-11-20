@@ -86,7 +86,10 @@
                                 <field name="tool_ids">
                                     <list editable="bottom">
                                         <field name="tool_id" />
+                                        <field name="quantity" />
                                         <field name="assigned_date" />
+                                        <field name="tool_state" />
+                                        <fiel name ="additionnal_notes" />
                                     </list>
                                 </field>
                             </page>
