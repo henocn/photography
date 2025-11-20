@@ -87,7 +87,6 @@
                                     <list editable="bottom">
                                         <field name="tool_id" />
                                         <field name="assigned_date" />
-                                        <field name="employee_id" invisible="1" />
                                     </list>
                                 </field>
                             </page>
