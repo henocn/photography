@@ -80,7 +80,7 @@
 
                         <notebook>
                             <page string="CV">
-                                <field name="resume" />
+                                <field name="resume" widget="attachment"/>
                             </page>
                             <page string="Outils">
                                 <field name="tool_ids">
