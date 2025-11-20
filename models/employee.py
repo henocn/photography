@@ -15,8 +15,11 @@ class Employee(models.Model):
         ('samedi', 'Samedi')
     ]
 
+    picture = fields.Image(string="Photo de l'employé")
     name = fields.Char(string="Nom de l'employé", required=True)
     email = fields.Char(string='Email', required=True)
+    resume = fields.Binary(string='CV')
+    phone = fields.Char(string='Téléphone')
     birth_date = fields.Date(string='Date de naissance')
     gender = fields.Selection([
         ('homme', 'Homme'),
