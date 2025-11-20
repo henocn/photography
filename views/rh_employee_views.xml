@@ -85,6 +85,7 @@
                             <page string="Outils">
                                 <field name="tool_ids">
                                     <list editable="bottom">
+                                        <field name="image" widget="image" height="50" width="50" />
                                         <field name="tool_id" />
                                         <field name="quantity" />
                                         <field name="assigned_date" />
