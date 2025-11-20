@@ -3,7 +3,7 @@ from odoo import models, fields
 
 
 class Employee(models.Model):
-    _name = 'employee.employee'
+    _name = 'rh.employee'
     _description = 'Employee'
 
     day_off_selection = [
@@ -26,5 +26,5 @@ class Employee(models.Model):
     day_off = fields.Selection(day_off_selection, string='Jour de répos', default='samedi')
     position = fields.Char(string='Position')
     specialization = fields.Char(string='Spécialité')
-    tools = fields.One2many('employee.tool', 'employee_id', string='Outils')
+    tool_ids = fields.One2many('rh.tool.association', 'employee_id', string='Outils')
     active = fields.Boolean(string='Active', default=True)
