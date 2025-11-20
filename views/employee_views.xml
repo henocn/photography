@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <record></record>
+
+        <record id="view_rh_employee_list" model="ir.ui.view">
+            <field name="name">rh.employee.list</field>
+            <field name="model">rh.employee</field>
+            <field name="arch" type="xml">
+                <list string="Employés">
+                    <field name="picture" widget="image" width="50" height="50"/>
+                    <field name="name" />
+                    <field name="email" />
+                    <field name="phone" />
+                    <field name="position" />
+                    <field name="day_off" />
+                    <field name="active" />
+                </list>
+            </field>
+        </record>
+
+
+        <record id="view_rh_employee_kanban" model="ir.ui.view">
+            <field name="name">rh.employee.kanban</field>
+            <field name="model">rh.employee</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_employee">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global">
+                                <div class="o_kanban_image">
+                                    <img t-if="record.picture.value"
+                                        t-att-src="record.picture.value" />
+                                </div>
+                                <div class="o_kanban_details">
+                                    <strong>
+                                        <field name="name" />
+                                    </strong>
+                                    <div>
+                                        <field name="position" />
+                                    </div>
+                                    <div>Email : <field name="email" /></div>
+                                    <div>Jour de repos : <field name="day_off" /></div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+
+        <record id="view_rh_employee_form" model="ir.ui.view">
+            <field name="name">rh.employee.form</field>
+            <field name="model">rh.employee</field>
+            <field name="arch" type="xml">
+                <form string="Employé">
+
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="picture" widget="image" />
+                            </group>
+                            <group>
+                                <field name="name" />
+                                <field name="email" />
+                                <field name="phone" />
+                                <field name="gender" />
+                                <field name="birth_date" />
+                                <field name="enrollment_date" />
+                                <field name="day_off" />
+                            </group>
+                        </group>
+
+                        <group>
+                            <group>
+                                <field name="position" />
+                                <field name="specialization" />
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="CV">
+                                <field name="resume" />
+                            </page>
+                            <page string="Outils">
+                                <field name="tool_ids">
+                                    <list editable="bottom">
+                                        <field name="tool_id" />
+                                        <field name="assigned_date" />
+                                        <field name="employee_id" invisible="1" />
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+
+                        <group>
+                            <field name="active" />
+                        </group>
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
     </data>
 </odoo>
