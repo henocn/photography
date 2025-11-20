@@ -39,7 +39,7 @@
             sequence="5" />
 
         <menuitem id="menu_rh_tool"
-            name="Employés"
+            name="Outils"
             parent="menu_photography_root"
             action="action_rh_tool"
             sequence="6" />
