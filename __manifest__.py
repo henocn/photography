@@ -28,7 +28,7 @@
         "views/photography_client_views.xml",
         "views/photography_equipment_views.xml",
         "views/photography_furniture_views.xml",
-        "views/photography_media_views.xml",
+        # "views/photography_media_views.xml",
         "views/photography_project_views.xml",
 
         "views/rh_employee_views.xml",
